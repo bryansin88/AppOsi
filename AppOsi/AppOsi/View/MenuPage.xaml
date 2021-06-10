@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppOsi.View.MenuPage"
+             Title="Centurión">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="10">
+                <Image Source="baner" VerticalOptions="FillAndExpand"  />
+                <Label                    
+                    x:Name="txtuser"
+                    FontSize="Large"
+                    TextColor="Black"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="CenterAndExpand" 
+                    IsVisible="false"/>
+                
+                <ImageButton Source="logo" WidthRequest="100" BackgroundColor="Transparent" Clicked="ImageButton_Clicked"/>
+                <ImageButton Source="coord" WidthRequest="100" BackgroundColor="Transparent" Clicked="ImageButton_Clicked_1"/>
+                <ImageButton Source="informa" WidthRequest="160" BackgroundColor="Transparent" Clicked="ImageButton_Clicked_2"/>
+                <StackLayout
+                            Orientation="Horizontal"
+                            HorizontalOptions="CenterAndExpand"
+                            VerticalOptions="EndAndExpand">
+                    <Image Source="logo" WidthRequest="50"/>
+                    <Label
+                                Text="OSI Centurión, Derechos Reservados 2019"
+                                TextColor="Black"
+                                VerticalOptions="Center"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

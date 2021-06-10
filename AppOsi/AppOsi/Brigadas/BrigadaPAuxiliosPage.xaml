@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppOsi.Brigadas.BrigadaPAuxiliosPage"
+             Title="Primeros Auxilios">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="10">
+                <Image Source="auxiliosbanner" VerticalOptions="FillAndExpand"  />
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+
+                    <ImageButton  Source="pa" WidthRequest="150"  BackgroundColor="Transparent"/>
+                    <ImageButton  BackgroundColor="Transparent" Source="listapa6" WidthRequest="150">
+
+                    </ImageButton>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+
+                    <ImageButton  BackgroundColor="Transparent" Source="brigadaspa6" WidthRequest="170" />
+                    <ImageButton BackgroundColor="Transparent" Source="equipospa" WidthRequest="170">
+
+                    </ImageButton>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+
+                    <ImageButton BackgroundColor="Transparent" Source="recordatoriosci6" WidthRequest="170" />
+                    <ImageButton BackgroundColor="Transparent" Source="inspeccionespa6" WidthRequest="170">
+
+                    </ImageButton>
+                </StackLayout>
+                <StackLayout
+                            Orientation="Horizontal"
+                            HorizontalOptions="CenterAndExpand"
+                            VerticalOptions="EndAndExpand">
+                    <Image Source="logo" WidthRequest="50"/>
+                    <Label
+                                Text="OSI Centurión, Derechos Reservados 2019"
+                                TextColor="Black"
+                                VerticalOptions="Center"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

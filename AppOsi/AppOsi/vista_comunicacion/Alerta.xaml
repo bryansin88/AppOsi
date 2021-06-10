@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppOsi.vista_comunicacion.Alerta" BackgroundColor="#F8F406">
+    <ContentPage.Content>
+
+        <StackLayout   Padding="25" >
+            <StackLayout>
+
+                <Image Source="baner" VerticalOptions="FillAndExpand"  />
+
+            </StackLayout>
+
+            <StackLayout Padding="0,10,0,0">
+
+                <Label Text="     ALERTA     " FontSize="30" FontAttributes="Bold"  HorizontalTextAlignment="Center"
+                   TextColor="#E4F211" 
+                   
+                   BackgroundColor="#0F0F0F" HorizontalOptions="CenterAndExpand" Padding="0" />
+
+            </StackLayout>
+
+            <StackLayout  Orientation="Horizontal" Padding="0,20,0,0" >
+
+                <Label Text="sdas" x:Name="lblFecha"
+                       TextColor="#000000" 
+                       HorizontalOptions="StartAndExpand" FontSize="20" />
+                <Label Text="asdas" 
+                        x:Name="lblTiempo"
+                       TextColor="#000000" HorizontalOptions="EndAndExpand" FontSize="20" />
+
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Padding="0,20,0,0">
+               
+                <RadioButton Content="Evento Real" Padding="0,0,40,0" FontSize="20" />
+                
+                <RadioButton Content="Simulacro" 
+                
+                 IsChecked="true" FontSize="20" />
+
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" Padding="0,20,0,0">
+                <Label Text="Desastre generado por  "
+                       TextColor="#000000" 
+                       FontAttributes="Bold" FontSize="20"/>
+                <Picker Title="Seleccione..." 
+                        x:Name="spnDesastre" 
+                        FontAttributes="Bold" FontSize="18" HorizontalOptions="EndAndExpand"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal"
+                         Padding="0,10,0,0">
+                <Label Text="Tipo de Desastre            "
+                       TextColor="#000000"
+                        FontAttributes="Bold" FontSize="20"/>
+                <Picker Title="Seleccione..."
+                        x:Name="spnTipoDesastres" 
+                        FontAttributes="Bold" FontSize="18" HorizontalOptions="EndAndExpand"/> 
+            </StackLayout>
+            
+            <Editor Placeholder="" IsReadOnly="False" HeightRequest="100" Keyboard="Chat" BackgroundColor="#F7F7F7" />
+
+            <StackLayout Padding="0,10,0,0">
+
+                <Image Source="cam.png"
+                    HorizontalOptions="Center"
+                  WidthRequest = "80" 
+ 
+                             VerticalOptions="CenterAndExpand" />
+
+            </StackLayout>
+            <StackLayout Orientation="Horizontal"  >
+
+                <Button Text="Informar" 
+                        
+                        BackgroundColor="#000000" 
+                        TextColor="#F5E708"
+                        CornerRadius="20" 
+                       HeightRequest="1"
+                           WidthRequest = "100"
+                        FontAttributes="Bold" HorizontalOptions="CenterAndExpand"  />
+               
+                <Button Text="EVACUAR" 
+                         WidthRequest = "110" 
+                        BackgroundColor="#000000" TextColor="#F3E503" CornerRadius="20" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
+
+            <StackLayout
+                    Orientation="Horizontal"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="EndAndExpand">
+                <Image Source="logo" WidthRequest="50"/>
+                <Label
+                        Text="OSI Centurión, Derechos Reservados 2019"
+                        TextColor="Black"
+                        VerticalOptions="Center"/>
+            </StackLayout>
+        </StackLayout>
+       
+    </ContentPage.Content>
+</ContentPage>

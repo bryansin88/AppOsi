@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppOsi.View.InformacionPage"
+             Title="Información">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="10">
+                <Image Source="baner" VerticalOptions="FillAndExpand"  />
+                <Frame BorderColor="Black">
+                    <Grid RowSpacing="0" ColumnSpacing="0"
+                          >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="2*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="30" />
+                            <RowDefinition Height="30" />
+                            <RowDefinition Height="30" />
+                            <RowDefinition Height="30" />
+                        </Grid.RowDefinitions>
+
+                        <Label 
+                            Grid.Column="0"
+                            Grid.ColumnSpan="2"
+                            Grid.Row="0"
+                            FontAttributes="Bold"
+                            FontSize="Large"
+                            HorizontalOptions="Center"
+                            Text="Información de seguridad de la empresa"
+                            TextColor="Black"/>
+
+                        <Label 
+                            Grid.Column="0"
+                            Grid.Row="1"
+                            FontAttributes="Bold"
+                            FontSize="Large"
+                            HorizontalOptions="Start"
+                            Text="Institución:"
+                            TextColor="Black"/>
+
+                        <Label 
+                            Grid.Column="1"
+                            Grid.Row="1"
+                            FontSize="Large"
+                            HorizontalOptions="Start"
+                            VerticalOptions="Fill"
+                            Text=""
+                            x:Name="txtInstitucion"
+                            TextColor="Black"/>
+
+                        <Label 
+                            Grid.Column="0"
+                            Grid.Row="2"
+                            FontAttributes="Bold"
+                            FontSize="Large"
+                            HorizontalOptions="Start"
+                            Text="Razón Social:"
+                            TextColor="Black"/>
+
+                        <Label 
+                            Grid.Column="1"
+                            Grid.Row="2"
+                            FontSize="Large"
+                            HorizontalOptions="Start"
+                            VerticalOptions="Fill"
+                            Text=""
+                            x:Name="txtrazon"
+                            TextColor="Black"/>
+
+                        <Label 
+                            Grid.Column="0"
+                            Grid.Row="3"
+                            FontAttributes="Bold"
+                            FontSize="Large"
+                            HorizontalOptions="Start"
+                            Text="Dirección:"
+                            TextColor="Black"/>
+
+                        <Label 
+                            Grid.Column="1"
+                            Grid.Row="3"
+                            FontSize="Large"
+                            HorizontalOptions="Start"
+                            VerticalOptions="Fill"
+                            Text=""
+                            x:Name="txtdireccion"
+                            TextColor="Black"/>
+
+                    </Grid>
+                </Frame>
+                <Image Source="baner" VerticalOptions="FillAndExpand"  />
+                <StackLayout
+                    Orientation="Horizontal"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="EndAndExpand">
+                    <Image Source="logo" WidthRequest="50"/>
+                    <Label
+                        Text="OSI Centurión, Derechos Reservados 2019"
+                        TextColor="Black"
+                        VerticalOptions="Center"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

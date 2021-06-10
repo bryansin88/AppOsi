@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppOsi.View.BrigadaPage"
+             Title="Menú Brigada">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="10">
+                <Image Source="baner" VerticalOptions="FillAndExpand"  />
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="2*"/>
+                    </Grid.ColumnDefinitions>
+                    <ImageButton 
+                        Grid.Column="0"
+                        Grid.Row="0"
+                        Grid.RowSpan="6"
+                        Clicked="ImageButton_Clicked"
+                        Source="coord" WidthRequest="100" BackgroundColor="Transparent" />
+
+                    <ImageButton 
+                        Grid.Column="1"
+                        Grid.Row="0"
+                        Clicked="ImageButton_Clicked_1"
+                        Source="ordensegur" WidthRequest="150" BackgroundColor="Transparent" />
+
+                    <ImageButton 
+                        Grid.Column="1"
+                        Grid.Row="1"
+                        Clicked="ImageButton_Clicked_2"
+                        Source="campamento" WidthRequest="150" BackgroundColor="Transparent" />
+
+                    <ImageButton 
+                        Grid.Column="1"
+                        Grid.Row="2"
+                        Clicked="ImageButton_Clicked_3"
+                        Source="evaluacion" WidthRequest="150" BackgroundColor="Transparent" />
+
+                    <ImageButton 
+                        Grid.Column="1"
+                        Grid.Row="3"
+                        Clicked="ImageButton_Clicked_4"
+                        Source="primerosaux" WidthRequest="150" BackgroundColor="Transparent" />
+
+                    <ImageButton 
+                        Grid.Column="1"
+                        Grid.Row="4"
+                        Clicked="ImageButton_Clicked_5"
+                        Source="equiposci" WidthRequest="150" BackgroundColor="Transparent" />
+
+                    <ImageButton 
+                        Grid.Column="1"
+                        Grid.Row="5"
+                        Clicked="ImageButton_Clicked_6"
+                        Source="comunicacion" WidthRequest="150" BackgroundColor="Transparent" />
+
+                </Grid>
+                <StackLayout
+                            Orientation="Horizontal"
+                            HorizontalOptions="CenterAndExpand"
+                            VerticalOptions="EndAndExpand">
+                    <Image Source="logo" WidthRequest="50"/>
+                    <Label
+                                Text="OSI Centurión, Derechos Reservados 2019"
+                                TextColor="Black"
+                                VerticalOptions="Center"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

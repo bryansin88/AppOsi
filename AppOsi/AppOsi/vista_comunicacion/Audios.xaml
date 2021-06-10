@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppOsi.vista_comunicacion.Audios">
+    <ContentPage.Content>
+        <StackLayout  HorizontalOptions="CenterAndExpand" BackgroundColor="#FCFDFF" Padding="10,0" >
+            <StackLayout>
+            <Label Text="!ESTAMOS EN CAMINO LLEGAREMOS LO MAS PRONTO POSIBLE!"
+                   FontSize="30"
+                   FontAttributes="Bold" 
+                   VerticalTextAlignment="Start"
+                   HorizontalTextAlignment="Center" 
+                   Padding="0,0,0,10" BackgroundColor="#1F8AAF" TextColor="#000000"  />
+            </StackLayout>
+
+            <StackLayout>
+                
+                
+            </StackLayout>
+            <StackLayout Orientation="Vertical" BackgroundColor="#52AEE4" Padding="10,0">
+
+                <Label Text="AYUDANOS A ENCONTRARTE"
+                       FontSize="20"
+                   FontAttributes="Bold" 
+                   VerticalTextAlignment="Start"
+                   HorizontalTextAlignment="Center" 
+                   Padding="0,20,0,0" TextColor="#000000"  />
+                <Label Text="Si puedes llena la siguiente informacion" 
+                      FontSize="20"
+                   FontAttributes="Bold" 
+                   VerticalTextAlignment="Start"
+                   HorizontalTextAlignment="Center" 
+                   Padding="0,20,0,0" TextColor="#000000"  />
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Detalla como te encuentras:" 
+                            FontSize="20"
+                   FontAttributes="Bold" 
+                   VerticalTextAlignment="Start"
+                   HorizontalTextAlignment="Center" 
+                   Padding="0,20,0,0" TextColor="#000000" />
+
+                   
+                </StackLayout>
+                
+                
+                <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+                   
+                    <ImageButton 
+                           Source="microfono"
+                        BackgroundColor="Transparent"
+                                 WidthRequest="50"
+                            x:Name="btnGrabar"
+                            />
+                    <Button Text="Enviar"
+                            CornerRadius="20"
+                             x:Name="btnRepro" TextColor="#000000" FontAttributes="Bold"
+                            />
+                </StackLayout>
+                
+                
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Detalla el lugar donde te encuentras::" 
+                            FontSize="20"
+                   FontAttributes="Bold" 
+                   VerticalTextAlignment="Start"
+                   HorizontalTextAlignment="Center" 
+                   Padding="0,20,0,0" TextColor="#000000" />
+
+
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+
+                    <ImageButton 
+                            HeightRequest="50"
+                            BackgroundColor="Transparent"
+                            x:Name="btnGrabar2"
+                            WidthRequest="50"
+                            Source="microfono"
+                            
+                            />
+                    <Button Text="Enviar"
+                            HeightRequest="20"
+                             x:Name="btnRepro2"  CornerRadius="20" FontAttributes="Bold" TextColor="#000000"
+                            />
+
+                </StackLayout>
+                
+            </StackLayout>
+
+            <StackLayout Orientation="Vertical">
+
+                <ImageButton 
+             Source="er" WidthRequest="70"
+                    BackgroundColor="Transparent"
+                    />
+                <Label Text="Guardar y Enviar"
+                       FontSize="20"
+                   FontAttributes="Bold" 
+                   VerticalTextAlignment="Start"
+                   HorizontalTextAlignment="Center" BackgroundColor="#F8F3F3" TextColor="#000000" />
+            </StackLayout>
+
+        </StackLayout>
+        
+
+    </ContentPage.Content>
+</ContentPage>

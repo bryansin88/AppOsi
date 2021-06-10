@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppOsi.Brigadas.BrigadaEvacuacionPage"
+             Title="Evacuación, Busqueda y Rescate">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout  Padding="10">
+                <Image Source="evacuacionbanner" VerticalOptions="FillAndExpand"  />
+                
+               
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+
+                    <ImageButton  Source="er" WidthRequest="150" Clicked="Button_Clicked" BackgroundColor="Transparent"
+                                  />
+                    <ImageButton  BackgroundColor="Transparent" 
+                                  x:Name="btnzona" Source="zonaer2" WidthRequest="150">
+                        
+                    </ImageButton>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+
+                    <ImageButton  BackgroundColor="Transparent" Source="brigadaser3" WidthRequest="170" />
+                    <ImageButton BackgroundColor="Transparent" Source="equiposer2" WidthRequest="170">
+
+                    </ImageButton>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+
+                    <ImageButton BackgroundColor="Transparent" Source="recordatorioser2" WidthRequest="170" />
+                    <ImageButton BackgroundColor="Transparent" Source="inspeccioneser2" WidthRequest="170">
+
+                    </ImageButton>
+                </StackLayout>
+                <StackLayout
+                            Orientation="Horizontal"
+                            HorizontalOptions="CenterAndExpand"
+                            VerticalOptions="EndAndExpand">
+                    <Image Source="logo" WidthRequest="50"/>
+                    <Label
+                                Text="OSI Centurión, Derechos Reservados 2019"
+                                TextColor="Black"
+                                VerticalOptions="Center"/>
+                </StackLayout>
+            </StackLayout>
+           
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

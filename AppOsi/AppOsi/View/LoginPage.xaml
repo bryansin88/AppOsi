@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppOsi.View.LoginPage"
+             NavigationPage.HasNavigationBar="false">
+    <ContentPage.Content>
+        <ScrollView >
+            <StackLayout Padding="10" Spacing="15">
+                <Image Source="baner" VerticalOptions="FillAndExpand"  />
+                <Label 
+                    FontAttributes="Bold"
+                    FontSize="Large"
+                    HorizontalOptions="Center"
+                    Text="LOGIN"
+                    TextColor="Black"/>
+
+                <Frame>
+                    <Grid RowSpacing="0" ColumnSpacing="0"
+                          Margin="10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="25"/>
+                            <ColumnDefinition Width="2*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="30" />
+                            <RowDefinition Height="40" />
+                            <RowDefinition Height="30" />
+                            <RowDefinition Height="40" />
+                        </Grid.RowDefinitions>
+
+                        <Label
+                            FontAttributes="Bold"
+                            Grid.Row="0"
+                            Grid.Column="0"
+                            Grid.ColumnSpan="2"
+                            Text="Nombre de Usuario"
+                            TextColor="Black"/>
+
+                        <Image 
+                            Grid.Row="1"
+                            Grid.Column="0" 
+                            Source="usu" WidthRequest="2"/>
+                        <Entry
+                            Grid.Row="1"
+                            Grid.Column="1"
+                            Grid.ColumnSpan="2"
+                            Placeholder="Ingrese su Usuario"
+                            x:Name="txtusu"
+                            ClearButtonVisibility="WhileEditing"/>
+
+                        <Label
+                            FontAttributes="Bold"
+                            Grid.Row="2"
+                            Grid.Column="0"
+                            Grid.ColumnSpan="2"
+                            Text="Password"
+                            TextColor="Black"/>
+
+                        <Image 
+                            Grid.Row="3"
+                            Grid.Column="0" 
+                            Source="pas" WidthRequest="2"/>
+                        <Entry
+                            Grid.Row="3"
+                            Grid.Column="1"
+                            Grid.ColumnSpan="2"
+                            IsPassword="True"
+                            Placeholder="Ingrese su Password"
+                            x:Name="txtpass"
+                            ClearButtonVisibility="WhileEditing"/>
+                        
+                    </Grid>
+                </Frame>
+                
+                <ActivityIndicator
+                    IsRunning="False"
+                    x:Name="activiteIndicator">
+                </ActivityIndicator>
+                
+                <StackLayout Orientation="Vertical"
+                             HorizontalOptions="Center">
+                    <Button 
+                            FontSize="Small"
+                            BackgroundColor="Black"
+                            BorderRadius="23"
+                            HeightRequest="46"
+                            WidthRequest="86"
+                            Text="Login"
+                            TextColor="White"
+                            x:Name="btnlogin"
+                        />
+                </StackLayout>
+                <StackLayout
+                    Orientation="Horizontal"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="EndAndExpand">
+                    <Image Source="logo" WidthRequest="50"/>
+                    <Label
+                        Text="OSI Centurión, Derechos Reservados 2019"
+                        TextColor="Black"
+                        VerticalOptions="Center"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
