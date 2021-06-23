@@ -16,12 +16,17 @@
 
                     <StackLayout Orientation="Vertical" Padding="20,40,0,0" >
                         <Label   WidthRequest = "100"  HorizontalOptions="CenterAndExpand" Text="Incendio" HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="20" TextColor="#000000"  />
-                        
+                        <Editor WidthRequest= "120"  Placeholder="" IsReadOnly="False" HeightRequest="90" Keyboard="Chat" BackgroundColor="#F7F7F7" />
 
                     </StackLayout>
 
                 </StackLayout>
-                
+                <StackLayout Orientation="Horizontal">
+
+                    <Button Text="" />
+                    
+
+                </StackLayout>
                 
             </StackLayout>
            
