@@ -10,12 +10,12 @@
                 <Label Text="Alerta"  WidthRequest = "200" HorizontalTextAlignment="Center"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" FontSize="40" TextColor="#E1CC0A" BackgroundColor="#000000" FontAttributes="Bold" />
-                <StackLayout Orientation="Horizontal">
+                <StackLayout Orientation="Horizontal" Padding="20,0,0,0" >
 
-                    <Button Text="" ImageSource="incen2.png" />
+                    <Image  Source="incen2.png" WidthRequest = "150" HeightRequest="200" />
 
-                    <StackLayout Orientation="Vertical" >
-                        <Label Text="Incendio" />
+                    <StackLayout Orientation="Vertical" Padding="20,40,0,0" >
+                        <Label   WidthRequest = "100"  HorizontalOptions="CenterAndExpand" Text="Incendio" HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="20" TextColor="#000000"  />
                         
 
                     </StackLayout>
