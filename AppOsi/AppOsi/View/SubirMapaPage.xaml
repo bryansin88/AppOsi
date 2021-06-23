@@ -12,13 +12,16 @@
                 <Entry x:Name="nombre" Placeholder="Zona 1"/>
                 <Label x:Name="lblLat" Text="dasda" />
                 <Label x:Name="lblLong" Text="dasda" />
+                <Picker Title="Seleccione..."
+x:Name="spnDesastre"
+HorizontalOptions="FillAndExpand"/>
                 <Button Text="Guardar Imagen" Clicked="Button_Clicked_1"/>
-
+               
                 <StackLayout
                             Orientation="Horizontal"
                             HorizontalOptions="CenterAndExpand"
                             VerticalOptions="EndAndExpand">
-                    <Image Source="logo" WidthRequest="50"/>
+                    <Image Source="{Binding ImageSource}" WidthRequest="50" x:Name="logo" />
                     <Label
                                 Text="OSI Centurión, Derechos Reservados 2019"
                                 TextColor="Black"

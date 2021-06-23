@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppOsi.vista_comunicacion.alertaComunicacion">
+    <ContentPage.Content>
+        <StackLayout Padding="20,40,20,0" >
+
+            <StackLayout Orientation="Vertical" Padding="0,30,0,20" BackgroundColor="#F5E70A" >
+
+                <Label Text="Alerta"  WidthRequest = "200" HorizontalTextAlignment="Center"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" FontSize="40" TextColor="#E1CC0A" BackgroundColor="#000000" FontAttributes="Bold" />
+                <StackLayout Orientation="Horizontal">
+
+                    <Button Text="" ImageSource="incen2.png" />
+
+                    <StackLayout Orientation="Vertical" >
+                        <Label Text="Incendio" />
+                        
+
+                    </StackLayout>
+
+                </StackLayout>
+                
+                
+            </StackLayout>
+           
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
